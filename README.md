@@ -59,7 +59,7 @@ mechanism to create an Array.
 ### Code Along
 
 Let's use [Array::new](http://ruby-doc.org/core-2.3.1/Array.html#method-c-new)
-to create some initialized arrays in [bin/code_along.rb](bin/code_along.rb).  [Creating
+to create some initialized arrays in [lib/code_along.rb](lib/code_along.rb).  [Creating
 Arrays](http://ruby-doc.org/core-2.3.1/Array.html#class-Array-label-Creating+Arrays)
 has an important caveat when creating Ruby Arrays with default values.
 
