@@ -3,7 +3,7 @@
 
 working_array = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 
-# Assign `20` to the end of the array using the array's length.
+# Append `20` to the end of the array using the array's length.
 
 # Access the 3rd element from the end of the array.
 
