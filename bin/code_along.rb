@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 # Create an empty array, `lit_array`, using the literal syntax
 
 # Create an array, `constr_array`, using the constructor syntax, initialized
