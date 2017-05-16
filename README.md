@@ -104,7 +104,7 @@ IndexError: index -5 too small for array; minimum: -4
 
 ### Lab: Storing and Accessing Array Elements
 
-Working in [bin/lab.rb](bin/lab.rb) (storing the results of any access in `tmp`
+Working in [lib/lab.rb](lib/lab.rb) (storing the results of any access in `tmp`
 for display):
 
 -   Assign `20` to the end of the array using the array's length.
@@ -179,7 +179,7 @@ Running `ruby bin/story.rb` should print your story for you in the terminal.
 
 ### Bonus: Create Ruby Array Using a Block Initializer
 
-In [bin/lab.rb](bin/lab.rb) use a block initializer with `Array.new` to create a
+In [lib/lab.rb](lib/lab.rb) use a block initializer with `Array.new` to create a
  Ruby Array with ten elements where elements are equal to their index multiplied
 by 2. Store the result and display it on the console with `p <array name>`.
 
