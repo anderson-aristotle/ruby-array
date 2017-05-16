@@ -145,6 +145,8 @@ from beginning)
 => ["Caleb", "Joel", "Julia", "Adam"]
 > developers
 => ["Kira", "Kosta", "Rick", "Johnathan", "Peter"]
+> developers.unshift "Guillermo"
+=> ["Guillermo", "Kira", "Kosta", "Rick", "Johnathan", "Peter"]
 ```
 
 ### Lab: Push and Pop Story
