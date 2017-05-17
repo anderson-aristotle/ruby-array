@@ -16,6 +16,6 @@ WORKING_ARRAY = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 ## Bonus ##
 # In lib/lab.rb use a block initializer with Array.new to create
 # a Ruby Array with ten elements where elements are equal to their
-# index multiplied by 2. Store the result in bonus_array
+# index multiplied by 2. Store the result in BONUS_ARRAY.
 
 # BONUS_ARRAY =
