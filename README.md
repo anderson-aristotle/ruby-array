@@ -183,7 +183,7 @@ Running `ruby bin/story.rb` should print your story for you in the terminal.
 
 In [lib/lab.rb](lib/lab.rb) use a block initializer with `Array.new` to create a
  Ruby Array with ten elements where elements are equal to their index multiplied
-by 2. Store the result and display it on the console with `p <array name>`.
+by 2. Store the result in a new array.
 
 ## [License](LICENSE)
 
