@@ -151,13 +151,13 @@ from beginning)
 
 ### Lab: Push and Pop Story
 
-Create [bin/story.rb](bin/story.rb). In this file, tell a story (of your choice) involving
+In [bin/story.rb](bin/story.rb), tell a story (of your choice) involving
 multiple characters that enter and leave the story. These characters should be
 held in an array and should be added to and taken out of the story using the
 `push`, `pop`, `shift` and `unshift` methods. Practice using string
 concatenation while printing your story by only referring to your characters
 from their held array (i.e., no hardcoding of names that exist in the array).
-One these requirements are met, feel free to implement more creative string and
+Once these requirements are met, feel free to implement more creative string and
 array methods into your story.
 
 For example:
