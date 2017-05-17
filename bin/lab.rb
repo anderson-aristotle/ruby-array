@@ -4,4 +4,4 @@ require_relative '../lib/lab.rb'
 
 p WORKING_ARRAY
 
-puts BONUS_ARRAY
+# p BONUS_ARRAY
