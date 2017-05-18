@@ -59,7 +59,7 @@ mechanism to create an Array.
 ### Code Along
 
 Let's use [Array::new](http://ruby-doc.org/core-2.3.1/Array.html#method-c-new)
-to create some initialized arrays in [bin/code_along.rb](bin/code_along.rb).  [Creating
+to create some initialized arrays in [lib/code_along.rb](lib/code_along.rb).  [Creating
 Arrays](http://ruby-doc.org/core-2.3.1/Array.html#class-Array-label-Creating+Arrays)
 has an important caveat when creating Ruby Arrays with default values.
 
@@ -104,8 +104,7 @@ IndexError: index -5 too small for array; minimum: -4
 
 ### Lab: Storing and Accessing Array Elements
 
-Working in [bin/lab.rb](bin/lab.rb) (storing the results of any access in `tmp`
-for display):
+Working in [lib/lab.rb](lib/lab.rb) (displaying the results to the console):
 
 -   Assign `20` to the end of the array using the array's length.
 -   Access the 3rd element from the end of the array.
@@ -145,17 +144,19 @@ from beginning)
 => ["Caleb", "Joel", "Julia", "Adam"]
 > developers
 => ["Kira", "Kosta", "Rick", "Johnathan", "Peter"]
+> developers.unshift "Guillermo"
+=> ["Guillermo", "Kira", "Kosta", "Rick", "Johnathan", "Peter"]
 ```
 
 ### Lab: Push and Pop Story
 
-Create [bin/story.rb](bin/story.rb). In this file, tell a story (of your choice) involving
+In [bin/story.rb](bin/story.rb), tell a story (of your choice) involving
 multiple characters that enter and leave the story. These characters should be
 held in an array and should be added to and taken out of the story using the
 `push`, `pop`, `shift` and `unshift` methods. Practice using string
 concatenation while printing your story by only referring to your characters
 from their held array (i.e., no hardcoding of names that exist in the array).
-One these requirements are met, feel free to implement more creative string and
+Once these requirements are met, feel free to implement more creative string and
 array methods into your story.
 
 For example:
@@ -179,9 +180,9 @@ Running `ruby bin/story.rb` should print your story for you in the terminal.
 
 ### Bonus: Create Ruby Array Using a Block Initializer
 
-In [bin/lab.rb](bin/lab.rb) use a block initializer with `Array.new` to create a
- Ruby Array with ten elements where elements are equal to their index multiplied
-by 2. Store the result and display it on the console with `p <array name>`.
+In [lib/lab.rb](lib/lab.rb) use a block initializer with `Array.new` to create a
+Ruby Array with ten elements where elements are equal to their index multiplied
+by 2. Store the result in a new array.
 
 ## [License](LICENSE)
 
