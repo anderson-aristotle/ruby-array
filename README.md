@@ -2,10 +2,6 @@
 
 # Ruby Arrays
 
-## Instructions
-
-Fork, clone, branch (training), `bundle install`
-
 ## Objectives
 
 By the end of this, developers should be able to:
@@ -15,6 +11,14 @@ By the end of this, developers should be able to:
 -   Access elements by index in a Ruby Array.
 -   Add elements to and remove elements from the end of a Ruby Array.
 -   Add elements to and remove elements from the beginning of a Ruby Array.
+
+## Preparation
+
+1.  Fork and clone this repository.
+ [FAQ](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
+1.  Create a new branch, `training`, for your work.
+1.  Checkout to the `training` branch.
+1.  Install dependencies with `bundle install`.
 
 ## Introduction
 
