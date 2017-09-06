@@ -35,30 +35,44 @@ constructor method on class Array) and with a constructor.
 
 ### Demo
 
-```ruby
-> developers = []
-=> []
-> developers = Array.new
-=> []
+<!-- start code block file="snippets/create_ruby_array_demo_1.rb" -->
+```rb
+# frozen_string_literal: true
+
+developers = []
+# => []
+
+developers = Array.new
+# => []
 ```
+<!-- end code block -->
 
 With the literal syntax, we can create an array with initial values.
 
-```ruby
-> not_the_same_type = [[], 'one', 2.0, 3]
-=> [[], "one", 2.0, 3]
-> developers = ['Caleb', 'Joel', 'Julia', 'Adam']
-=> ["Caleb", "Joel", "Julia", "Adam"]
+<!-- start code block file="snippets/create_ruby_array_demo_2.rb" -->
+```rb
+# frozen_string_literal: true
+
+not_the_same_type = [[], 'one', 2.0, 3]
+# => [[], "one", 2.0, 3]
+
+developers = ['Caleb', 'Joel', 'Julia', 'Adam']
+# => ["Caleb", "Joel", "Julia", "Adam"]
 ```
+<!-- end code block -->
 
 If all of the entries are strings, Ruby provides a (Perl inspired) string
 [quoting](https://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Literals#The_.25_Notation)
 mechanism to create an Array.
 
-```ruby
-> developers = %w{Caleb Joel Julia Adam}
-=> ["Caleb", "Joel", "Julia", "Adam"]
+<!-- start code block file="snippets/create_ruby_array_demo_3.rb" -->
+```rb
+# frozen_string_literal: true
+
+developers = %w[Caleb Joel Julia Adam]
+# => ["Caleb", "Joel", "Julia", "Adam"]
 ```
+<!-- end code block -->
 
 ### Code Along
 
@@ -87,24 +101,35 @@ Let's explore:
 -   [`Array#[]`](http://ruby-doc.org/core-2.4.1/Array.html#method-i-5B-5D) (Element Reference)
 -   [`Array#[]=`](http://ruby-doc.org/core-2.4.1/Array.html#method-i-5B-5D-3D) (Element Assignment)
 
-```ruby
-> developers[0]
-=> "Caleb"
+<!-- start code block file="snippets/assign_access_ruby_array_elements.rb" -->
+```rb
+# frozen_string_literal: true
+
+developers[0]
+# => "Caleb"
+
 developers[-1]
-=> "Adam"
-> developers[-4] == developers[0]
-=> true
-> developers[developers.length]
-=> nil
-> developers[-5]
-=> nil
-> developers[-3, 2]
-=> ["Joel", "Julia"]
-> developers[-5] = 'Kira'
-IndexError: index -5 too small for array; minimum: -4
-> developers[developers.length] = 'Kira'
-=> "Kira"
+# => "Adam"
+
+developers[-4] == developers[0]
+# => true
+
+developers[developers.length]
+# => nil
+
+developers[-5]
+# => nil
+
+developers[-3, 2]
+# => ["Joel", "Julia"]
+
+developers[-5] = 'Kira'
+# IndexError: index -5 too small for array; minimum: -4
+
+developers[developers.length] = 'Kira'
+# => "Kira"
 ```
+<!-- end code block -->
 
 ### Lab: Storing and Accessing Array Elements
 
@@ -129,28 +154,37 @@ end)
 -   [Array#shift](http://ruby-doc.org/core-2.4.1/Array.html#method-i-shift) (Remove
 from beginning)
 
-```ruby
-> developers << "Kosta"
-=> ["Caleb", "Joel", "Julia", "Adam", "Kira", "Kosta"]
-> developers.push "Rick"
-=> ["Caleb", "Joel", "Julia", "Adam", "Kira", "Kosta", "Rick"]
-> developers << "Johnathan" << "Peter"
-=> ["Caleb",
-  "Joel",
-  "Julia",
-  "Adam",
-  "Kira",
-  "Kosta",
-  "Rick",
-  "Johnathan",
-  "Peter"]
-> developers.shift 4
-=> ["Caleb", "Joel", "Julia", "Adam"]
-> developers
-=> ["Kira", "Kosta", "Rick", "Johnathan", "Peter"]
-> developers.unshift "Guillermo"
-=> ["Guillermo", "Kira", "Kosta", "Rick", "Johnathan", "Peter"]
+<!-- start code block file="snippets/ruby_array_stack_queue_code_along.rb" -->
+```rb
+# frozen_string_literal: true
+
+developers << 'Kosta'
+# => ['Caleb', 'Joel', 'Julia', 'Adam', 'Kira', 'Kosta']
+
+developers.push 'Rick'
+# => ['Caleb', 'Joel', 'Julia', 'Adam', 'Kira', 'Kosta', 'Rick']
+
+developers << 'Johnathan' << 'Peter'
+# => ['Caleb',
+#   'Joel',
+#   'Julia',
+#   'Adam',
+#   'Kira',
+#   'Kosta',
+#   'Rick',
+#   'Johnathan',
+#   'Peter']
+
+developers.shift 4
+# => ['Caleb', 'Joel', 'Julia', 'Adam']
+
+developers
+# => ['Kira', 'Kosta', 'Rick', 'Johnathan', 'Peter']
+
+developers.unshift 'Guillermo'
+# => ['Guillermo', 'Kira', 'Kosta', 'Rick', 'Johnathan', 'Peter']
 ```
+<!-- end code block -->
 
 ### Lab: Push and Pop Story
 
@@ -165,20 +199,27 @@ array methods into your story.
 
 For example:
 
-```ruby
-characters = ["Lee", "Adrian", "Bo"]
+<!-- start code block file="snippets/ruby_array_stack_queue_lab.rb" -->
+```rb
+# frozen_string_literal: true
 
-puts "There once were three friends, #{characters[0]}, #{characters[1]}, and #{characters[2]}."
+characters = %w[Lee Adrian Bo]
 
-characters << "Taylor"
+puts "There once were three friends, #{characters[0]}, #{characters[1]}, and
+#{characters[2]}."
 
-puts "#{characters[-2]} befriended #{characters[-1]}, #{characters[0]}\'s known enemy.
+characters << 'Taylor'
+
+puts "#{characters[-2]} befriended #{characters[-1]}, #{characters[0]}\'s known
+enemy.
       #{characters[0]} could no longer be their friend."
 
 characters.shift
 
-puts "#{characters[0]}, #{characters[1]}, and #{characters[2]} needed to think of lunch plans."
+puts "#{characters[0]}, #{characters[1]}, and #{characters[2]} needed to think
+of lunch plans."
 ```
+<!-- end code block -->
 
 Running `ruby bin/story.rb` should print your story for you in the terminal.
 
