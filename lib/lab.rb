@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 ## Lab ##
-WORKING_ARRAY = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+WORKING_ARRAY = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55].freeze
 
 # Append `20` to the end of the array using the array's length.
 
