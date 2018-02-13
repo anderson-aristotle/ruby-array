@@ -188,7 +188,7 @@ developers.unshift 'Guillermo'
 
 ### Lab: Push and Pop Story
 
-In [bin/story.rb](bin/story.rb), tell a story (of your choice) involving
+In [lib/story.rb](lib/story.rb), tell a story (of your choice) involving
 multiple characters that enter and leave the story. These characters should be
 held in an array and should be added to and taken out of the story using the
 `push`, `pop`, `shift` and `unshift` methods. Practice using string
