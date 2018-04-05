@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 module Lab
+  # ruby module, we will cover modules in a later lesson
   module Story
     def tell_story
       # TODO: create characters array

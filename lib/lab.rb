@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
 module Lab
+  # ruby module, we will cover modules in a later lesson
   module StoringAccessing
-    WORKING_ARRAY = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+    WORKING_ARRAY = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55].freeze
 
     def append_twenty
       # Append `20` to the end of the array using the array's length.

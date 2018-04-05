@@ -6,19 +6,19 @@
 
 By the end of this, developers should be able to:
 
--   Create a Ruby Array using both the literal (`[]`) and `new` constructors.
--   Assign an element at a specific index in a Ruby Array.
--   Access elements by index in a Ruby Array.
--   Add elements to and remove elements from the end of a Ruby Array.
--   Add elements to and remove elements from the beginning of a Ruby Array.
+- Create a Ruby Array using both the literal (`[]`) and `new` constructors.
+- Assign an element at a specific index in a Ruby Array.
+- Access elements by index in a Ruby Array.
+- Add elements to and remove elements from the end of a Ruby Array.
+- Add elements to and remove elements from the beginning of a Ruby Array.
 
 ## Preparation
 
-1.  Fork and clone this repository.
- [FAQ](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
-1.  Create a new branch, `training`, for your work.
-1.  Checkout to the `training` branch.
-1.  Install dependencies with `bundle install`.
+1. Fork and clone this repository.
+    [FAQ](https://git.generalassemb.ly/ga-wdi-boston/meta/wiki/ForkAndClone)
+1. Create a new branch, `training`, for your work.
+1. Checkout to the `training` branch.
+1. Install dependencies with `bundle install`.
 
 ## Introduction
 
@@ -36,6 +36,7 @@ constructor method on class Array) and with a constructor.
 ### Demo
 
 <!-- start code block file="snippets/create_ruby_array_demo_1.rb" -->
+
 ```rb
 # frozen_string_literal: true
 
@@ -45,11 +46,13 @@ developers = []
 developers = Array.new
 # => []
 ```
+
 <!-- end code block -->
 
 With the literal syntax, we can create an array with initial values.
 
 <!-- start code block file="snippets/create_ruby_array_demo_2.rb" -->
+
 ```rb
 # frozen_string_literal: true
 
@@ -59,6 +62,7 @@ not_the_same_type = [[], 'one', 2.0, 3]
 developers = ['Caleb', 'Joel', 'Julia', 'Adam']
 # => ["Caleb", "Joel", "Julia", "Adam"]
 ```
+
 <!-- end code block -->
 
 If all of the entries are strings, Ruby provides a (Perl inspired) string
@@ -66,12 +70,14 @@ If all of the entries are strings, Ruby provides a (Perl inspired) string
 mechanism to create an Array.
 
 <!-- start code block file="snippets/create_ruby_array_demo_3.rb" -->
+
 ```rb
 # frozen_string_literal: true
 
 developers = %w[Caleb Joel Julia Adam]
 # => ["Caleb", "Joel", "Julia", "Adam"]
 ```
+
 <!-- end code block -->
 
 ### Code Along
@@ -81,12 +87,12 @@ to create some initialized arrays in [lib/code_along.rb](lib/code_along.rb).  [C
 Arrays](http://ruby-doc.org/core-2.4.1/Array.html#class-Array-label-Creating+Arrays)
 has an important caveat when creating Ruby Arrays with default values.
 
--   Create an empty array, `lit_array`, using the literal syntax
+- Create an empty array, `lit_array`, using the literal syntax
 
--   Create an array, `constr_array`, using the constructor syntax, initialized
-with 5 elements
+- Create an array, `constr_array`, using the constructor syntax, initialized
+  with 5 elements
 
--   Create an array, `ten_false_array`, initialized with 10 `false` elements
+- Create an array, `ten_false_array`, initialized with 10 `false` elements
 
 How does this compare with
 [creating](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
@@ -98,10 +104,13 @@ JavaScript Arrays?
 
 Let's explore:
 
--   [`Array#[]`](http://ruby-doc.org/core-2.4.1/Array.html#method-i-5B-5D) (Element Reference)
--   [`Array#[]=`](http://ruby-doc.org/core-2.4.1/Array.html#method-i-5B-5D-3D) (Element Assignment)
+- [`Array#[]`](http://ruby-doc.org/core-2.4.1/Array.html#method-i-5B-5D)
+  (Element Reference)
+- [`Array#[]=`](http://ruby-doc.org/core-2.4.1/Array.html#method-i-5B-5D-3D)
+  (Element Assignment)
 
 <!-- start code block file="snippets/assign_access_ruby_array_elements.rb" -->
+
 ```rb
 # frozen_string_literal: true
 
@@ -129,32 +138,34 @@ developers[-5] = 'Kira'
 developers[developers.length] = 'Kira'
 # => "Kira"
 ```
+
 <!-- end code block -->
 
 ### Lab: Storing and Accessing Array Elements
 
 Working in [lib/lab.rb](lib/lab.rb) (displaying the results to the console):
 
--   Assign `20` to the end of the array using the array's length.
--   Access the 3rd element from the end of the array.
--   Access the 10th element in the array.
--   Assign [-12, -49] to the the 5th element from the end.
--   Access all the elements starting at index 1.
+- Assign `20` to the end of the array using the array's length.
+- Access the 3rd element from the end of the array.
+- Access the 10th element in the array.
+- Assign [-12, -49] to the the 5th element from the end.
+- Access all the elements starting at index 1.
 
 ## Using a Ruby Array as a stack or queue
 
 ### Code Along: Let's Explore
 
--   [Array#push](http://ruby-doc.org/core-2.4.1/Array.html#method-i-push) (Append -
-also [Array#<<](http://ruby-doc.org/core-2.4.1/Array.html#method-i-3C-3C))
--   [Array#pop](http://ruby-doc.org/core-2.4.1/Array.html#method-i-pop) (Remove from
-end)
--   [Array#unshift](http://ruby-doc.org/core-2.4.1/Array.html#method-i-unshift)
-(Prepend)
--   [Array#shift](http://ruby-doc.org/core-2.4.1/Array.html#method-i-shift) (Remove
-from beginning)
+- [Array#push](http://ruby-doc.org/core-2.4.1/Array.html#method-i-push) (Append -
+  also [Array#<<](http://ruby-doc.org/core-2.4.1/Array.html#method-i-3C-3C))
+- [Array#pop](http://ruby-doc.org/core-2.4.1/Array.html#method-i-pop) (Remove from
+  end)
+- [Array#unshift](http://ruby-doc.org/core-2.4.1/Array.html#method-i-unshift)
+  (Prepend)
+- [Array#shift](http://ruby-doc.org/core-2.4.1/Array.html#method-i-shift) (Remove
+  from beginning)
 
 <!-- start code block file="snippets/ruby_array_stack_queue_code_along.rb" -->
+
 ```rb
 # frozen_string_literal: true
 
@@ -184,6 +195,7 @@ developers
 developers.unshift 'Guillermo'
 # => ['Guillermo', 'Kira', 'Kosta', 'Rick', 'Johnathan', 'Peter']
 ```
+
 <!-- end code block -->
 
 ### Lab: Push and Pop Story
@@ -200,6 +212,7 @@ array methods into your story.
 For example:
 
 <!-- start code block file="snippets/ruby_array_stack_queue_lab.rb" -->
+
 ```rb
 # frozen_string_literal: true
 
@@ -219,6 +232,7 @@ characters.shift
 puts "#{characters[0]}, #{characters[1]}, and #{characters[2]} needed to think
 of lunch plans."
 ```
+
 <!-- end code block -->
 
 Running `ruby bin/story.rb` should print your story for you in the terminal.
@@ -231,6 +245,6 @@ by 2. Store the result in a new array.
 
 ## [License](LICENSE)
 
-1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
-1.  All software code is licensed under GNU GPLv3. For commercial use or
+1. All content is licensed under a CC­BY­NC­SA 4.0 license.
+1. All software code is licensed under GNU GPLv3. For commercial use or
     alternative licensing, please contact legal@ga.co.

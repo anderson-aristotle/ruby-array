@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# ruby module, we will cover modules in a later lesson
 module CodeAlong
   def lit_array
     # Create an empty array, `lit_array`, using the literal syntax
