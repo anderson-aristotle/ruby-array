@@ -23,7 +23,7 @@ By the end of this, developers should be able to:
 ## Introduction
 
 In Ruby, "Arrays are ordered, integer-indexed collections of any object." From
-that, [Ruby Arrays](http://ruby-doc.org/core-2.4.1/Array.html) seem a lot like
+that, [Ruby Arrays](http://ruby-doc.org/core-2.5.0/Array.html) seem a lot like
 JavaScript Arrays.
 
 But there are some important differences.
@@ -82,9 +82,9 @@ developers = %w[Caleb Joel Julia Adam]
 
 ### Code Along
 
-Let's use [Array::new](http://ruby-doc.org/core-2.4.1/Array.html#method-c-new)
+Let's use [Array::new](http://ruby-doc.org/core-2.5.0/Array.html#method-c-new)
 to create some initialized arrays in [lib/code_along.rb](lib/code_along.rb).  [Creating
-Arrays](http://ruby-doc.org/core-2.4.1/Array.html#class-Array-label-Creating+Arrays)
+Arrays](http://ruby-doc.org/core-2.5.0/Array.html#class-Array-label-Creating+Arrays)
 has an important caveat when creating Ruby Arrays with default values.
 
 - Create an empty array, `lit_array`, using the literal syntax
@@ -104,9 +104,9 @@ JavaScript Arrays?
 
 Let's explore:
 
-- [`Array#[]`](http://ruby-doc.org/core-2.4.1/Array.html#method-i-5B-5D)
+- [`Array#[]`](http://ruby-doc.org/core-2.5.0/Array.html#method-i-5B-5D)
   (Element Reference)
-- [`Array#[]=`](http://ruby-doc.org/core-2.4.1/Array.html#method-i-5B-5D-3D)
+- [`Array#[]=`](http://ruby-doc.org/core-2.5.0/Array.html#method-i-5B-5D-3D)
   (Element Assignment)
 
 <!-- start code block file="snippets/assign_access_ruby_array_elements.rb" -->
@@ -155,13 +155,13 @@ Working in [lib/lab.rb](lib/lab.rb) (displaying the results to the console):
 
 ### Code Along: Let's Explore
 
-- [Array#push](http://ruby-doc.org/core-2.4.1/Array.html#method-i-push) (Append -
-  also [Array#<<](http://ruby-doc.org/core-2.4.1/Array.html#method-i-3C-3C))
-- [Array#pop](http://ruby-doc.org/core-2.4.1/Array.html#method-i-pop) (Remove from
+- [Array#push](http://ruby-doc.org/core-2.5.0/Array.html#method-i-push) (Append -
+  also [Array#<<](http://ruby-doc.org/core-2.5.0/Array.html#method-i-3C-3C))
+- [Array#pop](http://ruby-doc.org/core-2.5.0/Array.html#method-i-pop) (Remove from
   end)
-- [Array#unshift](http://ruby-doc.org/core-2.4.1/Array.html#method-i-unshift)
+- [Array#unshift](http://ruby-doc.org/core-2.5.0/Array.html#method-i-unshift)
   (Prepend)
-- [Array#shift](http://ruby-doc.org/core-2.4.1/Array.html#method-i-shift) (Remove
+- [Array#shift](http://ruby-doc.org/core-2.5.0/Array.html#method-i-shift) (Remove
   from beginning)
 
 <!-- start code block file="snippets/ruby_array_stack_queue_code_along.rb" -->
