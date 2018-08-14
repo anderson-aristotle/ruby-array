@@ -35,8 +35,6 @@ constructor method on class Array) and with a constructor.
 
 ### Demo
 
-<!-- start code block file="snippets/create_ruby_array_demo_1.rb" -->
-
 ```rb
 # frozen_string_literal: true
 
@@ -47,11 +45,7 @@ developers = Array.new
 # => []
 ```
 
-<!-- end code block -->
-
 With the literal syntax, we can create an array with initial values.
-
-<!-- start code block file="snippets/create_ruby_array_demo_2.rb" -->
 
 ```rb
 # frozen_string_literal: true
@@ -63,13 +57,9 @@ developers = ['Caleb', 'Joel', 'Julia', 'Adam']
 # => ["Caleb", "Joel", "Julia", "Adam"]
 ```
 
-<!-- end code block -->
-
 If all of the entries are strings, Ruby provides a (Perl inspired) string
 [quoting](https://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Literals#The_.25_Notation)
 mechanism to create an Array.
-
-<!-- start code block file="snippets/create_ruby_array_demo_3.rb" -->
 
 ```rb
 # frozen_string_literal: true
@@ -77,8 +67,6 @@ mechanism to create an Array.
 developers = %w[Caleb Joel Julia Adam]
 # => ["Caleb", "Joel", "Julia", "Adam"]
 ```
-
-<!-- end code block -->
 
 ### Code Along
 
@@ -109,8 +97,6 @@ Let's explore:
 - [`Array#[]=`](http://ruby-doc.org/core-2.5.0/Array.html#method-i-5B-5D-3D)
   (Element Assignment)
 
-<!-- start code block file="snippets/assign_access_ruby_array_elements.rb" -->
-
 ```rb
 # frozen_string_literal: true
 
@@ -139,8 +125,6 @@ developers[developers.length] = 'Kira'
 # => "Kira"
 ```
 
-<!-- end code block -->
-
 ### Lab: Storing and Accessing Array Elements
 
 Working in [lib/lab.rb](lib/lab.rb) (displaying the results to the console):
@@ -163,8 +147,6 @@ Working in [lib/lab.rb](lib/lab.rb) (displaying the results to the console):
   (Prepend)
 - [Array#shift](http://ruby-doc.org/core-2.5.0/Array.html#method-i-shift) (Remove
   from beginning)
-
-<!-- start code block file="snippets/ruby_array_stack_queue_code_along.rb" -->
 
 ```rb
 # frozen_string_literal: true
@@ -196,8 +178,6 @@ developers.unshift 'Guillermo'
 # => ['Guillermo', 'Kira', 'Kosta', 'Rick', 'Johnathan', 'Peter']
 ```
 
-<!-- end code block -->
-
 ### Lab: Push and Pop Story
 
 In [bin/story.rb](bin/story.rb), tell a story (of your choice) involving
@@ -210,8 +190,6 @@ Once these requirements are met, feel free to implement more creative string and
 array methods into your story.
 
 For example:
-
-<!-- start code block file="snippets/ruby_array_stack_queue_lab.rb" -->
 
 ```rb
 # frozen_string_literal: true
@@ -232,8 +210,6 @@ characters.shift
 puts "#{characters[0]}, #{characters[1]}, and #{characters[2]} needed to think
 of lunch plans."
 ```
-
-<!-- end code block -->
 
 Running `ruby bin/story.rb` should print your story for you in the terminal.
 
