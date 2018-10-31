@@ -7,11 +7,11 @@ working_array = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 
 # Access the 3rd element from the end of the array.
 
-# Access element 9 from the array
+# Access the 10th element from the array
 
 # Assign `[-12, -49]` to the 5th element from the end.
 
-# Access all the elements starting at index 1.
+# Access all the elements starting at the 2nd element.
 
 ## Bonus ##
 # In lib/lab.rb use a block initializer with Array.new to create
