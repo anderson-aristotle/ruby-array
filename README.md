@@ -129,13 +129,13 @@ developers[developers.length] = 'Kira'
 
 Working in [lib/lab.rb](lib/lab.rb) (displaying the results to the console):
 
-- Assign `20` to the end of the array using the array's length.
+- Append `20` to the end of the array using the array's length.
 - Access the 3rd element from the end of the array.
 - Access the 10th element in the array.
-- Assign [-12, -49] to the the 5th element from the end.
+- Assign [-12, -49] to the 5th element from the end.
 - Access all the elements starting at the 2nd element.
 
-## Using a Ruby Array as a stack or queue
+## Adding and Removing Elements from Both ends of an Array
 
 ### Code Along: Let's Explore
 
@@ -167,6 +167,9 @@ developers << 'Johnathan' << 'Peter'
 #   'Rick',
 #   'Johnathan',
 #   'Peter']
+
+developers.pop
+# 'Peter'
 
 developers.shift 4
 # => ['Caleb', 'Joel', 'Julia', 'Adam']
