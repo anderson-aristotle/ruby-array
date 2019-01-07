@@ -168,6 +168,9 @@ developers << 'Johnathan' << 'Peter'
 #   'Johnathan',
 #   'Peter']
 
+developers.pop
+# 'Peter'
+
 developers.shift 4
 # => ['Caleb', 'Joel', 'Julia', 'Adam']
 
