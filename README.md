@@ -135,7 +135,7 @@ Working in [lib/lab.rb](lib/lab.rb) (displaying the results to the console):
 - Assign [-12, -49] to the the 5th element from the end.
 - Access all the elements starting at the 2nd element.
 
-## Using a Ruby Array as a stack or queue
+## Adding and Removing Elements from Both ends of an Array
 
 ### Code Along: Let's Explore
 
