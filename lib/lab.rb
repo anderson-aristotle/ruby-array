@@ -9,7 +9,7 @@ working_array = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 
 # Access the 10th element in the array.
 
-# Assign [-12, -49] to the the 5th element from the end.
+# Assign [-12, -49] to the 5th element from the end.
 
 # Access all the elements starting at the 2nd element.
 
